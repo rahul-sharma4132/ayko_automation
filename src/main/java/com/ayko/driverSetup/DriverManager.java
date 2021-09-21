@@ -28,7 +28,7 @@ public class DriverManager {
 			WebDriverManager.chromedriver().setup();
 			// System.setProperty("webdriver.chrome.verboseLogging", "true");
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+			options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

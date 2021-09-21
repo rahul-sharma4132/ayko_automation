@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-22T00:27:58 IST" name="AykoSeleniumCucumber" finished-at="2021-09-22T00:28:16 IST" duration-ms="17448">
+    <groups>
+    </groups>
+    <test started-at="2021-09-22T00:27:58 IST" name="AykoSeleniumCucumber" finished-at="2021-09-22T00:28:16 IST" duration-ms="17448">
+      <class name="com.example.TitleOfYourFeatureTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.example.TitleOfYourFeatureTest@702b8b12]" started-at="2021-09-22T00:27:56 IST" name="setUp" finished-at="2021-09-22T00:27:58 IST" duration-ms="2971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="accessoriesPageNavigation()[pri:0, instance:com.example.TitleOfYourFeatureTest@702b8b12]" started-at="2021-09-22T00:27:59 IST" name="accessoriesPageNavigation" finished-at="2021-09-22T00:28:16 IST" duration-ms="17398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accessoriesPageNavigation -->
+      </class> <!-- com.example.TitleOfYourFeatureTest -->
+    </test> <!-- AykoSeleniumCucumber -->
+  </suite> <!-- AykoSeleniumCucumber -->
+</testng-results>

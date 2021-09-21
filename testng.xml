@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "AykoSeleniumCucumber" configfailurepolicy="continue" parallel="methods" thread-count="10">
+<parameter name="browser" value="Chrome"/>
+<test name = "AykoSeleniumCucumber">
+<classes>
+<class name = "com.example.TitleOfYourFeatureTest" />
+</classes>
+</test>
+</suite>

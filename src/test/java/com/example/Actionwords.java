@@ -66,15 +66,11 @@ public class Actionwords {
 
     public void thePriceShouldBeInAcscendingOrder()  throws Exception {
     	boolean result = false;
-    	driver.findElement(By.xpath("//a[@href='https://www.ribblecycles.co.uk/components/frames-forks/frames/?dir=asc&order=price_asc&price=250-500']")).click();
-		List<WebElement> price_list = driver.findElements(By.xpath("//div[@class='price-box']//span[@class='price notranslate']"));
-		for(int i = 0; i < 3; i++) {
-			String price1 = price_list.get(i).getText();
-			double x = string_to_num(price1);
-			String price2 = price_list.get(i+1).getText();
-			double y = string_to_num(price2);
-			Assert.assertTrue(y>=x);
-		}
+		String price1 = driver.findElement(By.xpath("//span[@id='product-price-72631']//span")).getText();
+		String price2 = driver.findElement(By.xpath("//span[@id='product-price-79961']//span")).getText();
+		double p1 = string_to_num(price1);
+		double p2 = string_to_num(price2);
+		Assert.assertTrue(p2>=p1);
     }
     
     public static double string_to_num(String number) {

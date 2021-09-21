@@ -20,7 +20,6 @@ public class DriverManager {
 	public static WebDriver driver;
 
 	public static WebDriver setupDriver(String browserName) {
-		
 		driver = null;
 		
 		if (browserName.equalsIgnoreCase("Chrome")) {

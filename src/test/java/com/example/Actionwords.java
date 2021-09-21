@@ -66,6 +66,7 @@ public class Actionwords {
 
     public void thePriceShouldBeInAcscendingOrder()  throws Exception {
     	boolean result = false;
+    	driver.findElement(By.xpath("//a[@href='https://www.ribblecycles.co.uk/components/frames-forks/frames/?dir=asc&order=price_asc&price=250-500']")).click();
 		List<WebElement> price_list = driver.findElements(By.xpath("//div[@class='price-box']//span[@class='price notranslate']"));
 		for(int i = 0; i < 3; i++) {
 			String price1 = price_list.get(i).getText();
